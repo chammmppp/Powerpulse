@@ -17,3 +17,12 @@
 .price{
     font-style: normal;
 }
+
+.list-menu{
+    list-style: none;
+    padding: 0;
+}
+.link-category{
+    text-decoration: none;
+    color: #343a40;
+}
