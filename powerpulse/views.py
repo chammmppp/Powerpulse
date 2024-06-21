@@ -7,3 +7,8 @@ def home(request):
     template = loader.get_template('home.html')
     # return render(request, 'home.html')
     return HttpResponse(template.render())
+
+
+def store(request):
+    template = loader.get_template('store.html')
+    return HttpResponse(template.render())

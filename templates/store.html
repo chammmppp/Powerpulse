@@ -1,173 +1,116 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <!-- CSS Link -->
-    <link rel="stylesheet" href="/powerpulse/static/css/store.css" />
-    <link rel="stylesheet" href="/powerpulse/static/css/text.css" />
-    <style>
-      .title-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-    </style>
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    <link rel="stylesheet" href="{% static '/css/store.css' %}"/>
     <title>PowerPulse - Store</title>
-  </head>
+{% endblock %}
 
-  <body>
+{% block content %}
     <section class="section-content">
-      <div class="container my-5">
-        <div class="row">
-          <div class="col-md-9">
-            <div class="card mb-3">
-              <div class="card-body py-0">
-                <div class="row">
-                  <main class="col-md-9 d-flex flex-row">
-                    <div class="img-product">
-                      <img
-                        src="/powerpulse/static/images/image-products/1.jpg"
-                        alt=""
-                        style="max-height: 220px; width: auto"
-                      />
-                    </div>
-                    <div class="py-3">
-                      <a href="" class="h5 text-link">Some text in here</a>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-9">
+                    {% for product in products %}
+                    {% endfor %}
 
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quidem, commodi. Molestias labore fuga possimus cum sint
-                        dolorum unde deleniti modi.!
-                      </p>
-                    </div>
-                  </main>
-                  <article class="col-md-3 card-product-list py-3">
-                    <var class="price h5">&#3647;299</var>
-                    <div class="quantity-product"></div>
-                    <div class="d-flex flex-column">
-                      <a href="" class="btn btn-primary mt-5 mb-2">Buy now</a>
-                      <a href="" class="btn btn-add-to-cart"
-                        ><i class="bi bi-heart-fill me-2"></i>Add to wishlist</a
-                      >
-                    </div>
-                  </article>
-                </div>
-              </div>
-            </div>
-            <!-- Product 2 -->
-            <div class="card">
-              <div class="card-body py-0">
-                <div class="row">
-                  <main class="col-md-9 d-flex flex-row">
-                    <div class="img-product">
-                      <img
-                        src="/powerpulse/static/images/image-products/1.jpg"
-                        alt=""
-                        style="max-height: 220px; width: auto"
-                      />
-                    </div>
-                    <div class="py-3">
-                      <a href="" class="h5 text-link">Some text in here</a>
+                    <div class="card mb-3">
+                        <div class="card-body py-0">
+                            <div class="row">
+                                <main class="col-md-9 d-flex flex-row">
+                                    <div class="img-product">
+                                        <img
+                                                src="{% static '/images/image-products/1.jpg' %}"
+                                                alt=""
+                                                style="max-height: 220px; width: auto"
+                                        />
+                                    </div>
+                                    <div class="py-3">
+                                        <a href="" class="h5 text-link">Some text in here</a>
 
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quidem, commodi. Molestias labore fuga possimus cum sint
-                        dolorum unde deleniti modi.!
-                      </p>
-                    </div>
-                  </main>
-                  <article class="col-md-3 card-product-list py-3">
-                    <var class="price h5">&#3647;299</var>
-                    <div class="quantity-product"></div>
-                    <div class="d-flex flex-column">
-                      <a href="" class="btn btn-primary mt-5 mb-2">Buy now</a>
-                      <a href="" class="btn btn-add-to-cart"
-                        ><i class="bi bi-heart-fill me-2"></i>Add to wishlist</a
-                      >
-                    </div>
-                  </article>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- col 2 -->
-          <div class="col-md-3">
-            <aside>
-              <div class="card p-3">
-                <article>
-                  <div class="header">
-                    <article class="filter-group">
-                      <div class="header">
-                        <a
-                          class=""
-                          href=""
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapse-aside"
-                          style="text-decoration: none"
-                        >
-                          <div class="title-container">
-                            <h6 class="title">Categories</h6>
-                            <i class="bi bi-chevron-down"></i>
-                          </div>
-                        </a>
-                      </div>
-                      <div
-                        class="filter-content collapse show"
-                        id="collapse-aside"
-                      >
-                        <div class="body">
-                          <form action="" class="my-3">
-                            <div class="input-group">
-                              <input
-                                type="text"
-                                class="form-control"
-                                placeholder="Search"
-                              />
-                              <div class="input-group-append">
-                                <button
-                                  class="btn btn-primary rounded-start-0"
-                                  type="button"
-                                >
-                                  <i class="bi bi-search"></i>
-                                </button>
-                              </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Quidem, commodi. Molestias labore fuga possimus cum sint
+                                            dolorum unde deleniti modi.!
+                                        </p>
+                                    </div>
+                                </main>
+                                <article class="col-md-3 card-product-list py-3">
+                                    <var class="price h5">&#3647;299</var>
+                                    <div class="quantity-product"></div>
+                                    <div class="d-flex flex-column">
+                                        <a href="" class="btn btn-primary mt-5 mb-2">Buy now</a>
+                                        <a href="" class="btn btn-add-to-cart"
+                                        ><i class="bi bi-heart-fill me-2"></i>Add to wishlist</a
+                                        >
+                                    </div>
+                                </article>
                             </div>
-                          </form>
-                          <ul class="list-menu">
-                            <li>
-                              <a href="" class="link-category">Clothes</a>
-                            </li>
-                            <li><a href="" class="link-category">Shoes</a></li>
-                            <li>
-                              <a href="" class="link-category">Whey Proteins</a>
-                            </li>
-                          </ul>
                         </div>
-                      </div>
-                    </article>
-                  </div>
-                </article>
-              </div>
-            </aside>
-          </div>
-        </div>
-      </div>
-    </section>
+                    </div>
+                </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-  </body>
-</html>
+                <!-- Side bar -->
+                <div class="col-md-3">
+                    <aside>
+                        <div class="card p-3">
+                            <article>
+                                <div class="header">
+                                    <article class="filter-group">
+                                        <div class="header">
+                                            <a
+                                                    class=""
+                                                    href=""
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#collapse-aside"
+                                                    style="text-decoration: none"
+                                            >
+                                                <div class="title-container">
+                                                    <h6 class="title">Categories</h6>
+                                                    <i class="bi bi-chevron-down"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div
+                                                class="filter-content collapse show"
+                                                id="collapse-aside"
+                                        >
+                                            <div class="body">
+                                                <form action="" class="my-3">
+                                                    <div class="input-group">
+                                                        <input
+                                                                type="text"
+                                                                class="form-control"
+                                                                placeholder="Search"
+                                                        />
+                                                        <div class="input-group-append">
+                                                            <button
+                                                                    class="btn btn-primary rounded-start-0"
+                                                                    type="button"
+                                                            >
+                                                                <i class="bi bi-search"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                                <ul class="list-menu">
+                                                    <li>
+                                                        <a href="" class="link-category">Clothes</a>
+                                                    </li>
+                                                    <li><a href="" class="link-category">Shoes</a></li>
+                                                    <li>
+                                                        <a href="" class="link-category">Whey Proteins</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </article>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

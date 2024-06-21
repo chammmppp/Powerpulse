@@ -5,24 +5,35 @@
 .btn-add-to-cart:hover {
     border-color: #989898;
 }
-.text-link{
+
+.text-link {
     text-decoration: none;
 }
-.card-product-list{
+
+.card-product-list {
     border-left: 1px solid #e4e4e4;
 }
-.bi-heart-fill{
-    color:#989898;
+
+.bi-heart-fill {
+    color: #989898;
 }
-.price{
+
+.price {
     font-style: normal;
 }
 
-.list-menu{
+.list-menu {
     list-style: none;
     padding: 0;
 }
-.link-category{
+
+.link-category {
     text-decoration: none;
     color: #343a40;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
