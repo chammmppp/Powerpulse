@@ -3,13 +3,14 @@
 
 {% block title %}
     <link rel="stylesheet" href="{% static '/css/home.css' %}">
+    <title>PowerPulse - Home</title>
 {% endblock %}
 
 {% block content %}
     <!-- Main Content Section -->
     <main class="main-content my-5">
         <!-- Introduction Banner -->
-        <section class="section-intro" style="padding-top: 20px; padding-bottom: 20px;">
+        <section class="section-intro">
             <div class="container">
                 <div class="intro-banner-wrap">
                     <img class="img-fluid rounded"
@@ -31,14 +32,13 @@
                 <div class="row mt-3">
                     <!-- Product 1 -->
                     <div class="col-md-3">
-                        <a href="/detailProduct.html">
+                        <a href="#">
                             <div class="card card-product">
                                 <img class="rounded-top" src="{% static 'images/image-products/1.jpg' %}"
                                      alt="Blue shirt">
-                                <div class="card-body">
-                                    <p class="card-text">Some text in here</p>
-                                    <div class="product-price-wrapper"
-                                         style="border-top:1px solid #e4e4e4; padding-top: 16px;">
+                                <div class="card-body p-0">
+                                    <p class="card-text p-3">Some text in here</p>
+                                    <div class="product-price-wrapper mb-1">
                                         <var class="price">&#3647;12</var>
                                         <a href="/cart.html"
                                            class="btn btn-outline-primary btn-sm float-end btn-add-to-cart">Add to
@@ -49,66 +49,6 @@
                         </a>
                     </div>
                     <!-- End Product 1 -->
-
-                    <!-- Product 2 -->
-                    <div class="col-md-3">
-                        <a href="/detailProduct.html">
-                            <div class="card card-product">
-                                <img class="rounded-top" src="{% static 'images/image-products/1.jpg' %}" alt="Jean">
-                                <div class="card-body">
-                                    <p class="card-text">Some text in here</p>
-                                    <div class="product-price-wrapper"
-                                         style="border-top:1px solid #e4e4e4; padding-top: 16px;">
-                                        <var class="price">&#3647;12</var>
-                                        <a href="/cart.html"
-                                           class="btn btn-outline-primary btn-sm float-end btn-add-to-cart">Add to
-                                            cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- End Product 2 -->
-
-                    <!-- Product 3 -->
-                    <div class="col-md-3">
-                        <a href="/detailProduct.html">
-                            <div class="card card-product">
-                                <img class="rounded-top" src="{% static 'images/image-products/1.jpg' %}" alt="Shirt">
-                                <div class="card-body">
-                                    <p class="card-text">Some text in here</p>
-                                    <div class="product-price-wrapper"
-                                         style="border-top:1px solid #e4e4e4; padding-top: 16px;">
-                                        <var class="price">&#3647;12</var>
-                                        <a href="/cart.html"
-                                           class="btn btn-outline-primary btn-sm float-end btn-add-to-cart">Add to
-                                            cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- End Product 3 -->
-
-                    <!-- Product 4 -->
-                    <div class="col-md-3">
-                        <a href="/detailProduct.html">
-                            <div class="card card-product">
-                                <img class="rounded-top" src="{% static 'images/image-products/1.jpg' %}" alt="Jean">
-                                <div class="card-body">
-                                    <p class="card-text">Some text in here</p>
-                                    <div class="product-price-wrapper"
-                                         style="border-top:1px solid #e4e4e4; padding-top: 16px;">
-                                        <var class="price">&#3647;12</var>
-                                        <a href="/cart.html"
-                                           class="btn btn-outline-primary btn-sm float-end btn-add-to-cart">Add to
-                                            cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- End Product 4 -->
                 </div>
                 <!-- End Product Cards -->
             </div>
