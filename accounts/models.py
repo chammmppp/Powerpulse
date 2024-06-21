@@ -1,6 +1,4 @@
-import email
 
-import self
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
 
