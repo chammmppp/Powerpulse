@@ -1,4 +1,4 @@
-
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,7 +41,7 @@
                     </div>
                     <div class="card-footer bg-white text-center">
                         <p class="card-text d-inline">Don't have an account?</p>
-                        <a href="./signup.html" class="d-inline" style="text-decoration: none;">Create Account</a>
+                        <a href="{% url 'signup' %}" class="d-inline" style="text-decoration: none;">Create Account</a>
                     </div>
                 </div>
             </div>

@@ -1,14 +1,18 @@
-# from django.shortcuts import render
-from django.http import HttpResponse
+from django.shortcuts import render
 from django.template import loader
 
 
 def home(request):
-    template = loader.get_template('home.html')
-    # return render(request, 'home.html')
-    return HttpResponse(template.render())
+    return render(request, 'home.html')
 
 
 def store(request):
-    template = loader.get_template('store.html')
-    return HttpResponse(template.render())
+    return render(request, 'store.html')
+
+
+def login(request):
+    return render(request, 'login.html')
+
+
+def signup(request):
+    return render(request, 'signup.html')
