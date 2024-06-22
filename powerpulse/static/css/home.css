@@ -8,6 +8,9 @@
   box-shadow: 0 4px 15px rgba(153, 153, 153, 0.3);
   transition: 0.3s;
 }
+.card-product{
+  height: 420px;
+}
 .card-product a {
   text-decoration: none;
   color: inherit;
